@@ -53,6 +53,9 @@ define gui.text_color = '#ffffff'
 define gui.interface_text_color = '#ffffff'
 
 
+define persistent.dialogueBoxOpacity = 1.0
+
+
 ## 字体和字体大小 #####################################################################
 
 ## 游戏内文本使用的字体。

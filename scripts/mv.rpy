@@ -58,10 +58,10 @@ define load_shorten = 0.0
 
 screen m_info():
     text "9-tie - Only one yell\n夢ノ結唱.exe":
-        align (1.0, 0.0)
+        align (0.99, 0.01)
         text_align 1.0
         size 24
-        color "#fefefe"
+        color "#fefefecd"
         outlines [(2, "#010101")]
         font "NotoSansMonoCJKjp-Bold.otf"
 
@@ -78,9 +78,7 @@ label mv:
         $ renpy.pause(0.005, hard=True)
 
     idle "{font=j}{b}{color=#e6937d}
-    Only one yell{/color}\n
-    Original: 9-tie\n
-    Cover: 夢ノ結唱{/b}{/font}
+    Only one yell{/color}\nOriginal: 9-tie\nCover: 夢ノ結唱{/b}{/font}
     {fast}{nw=[11.96-shorten-load_shorten]}"
 
     show screen m_info
@@ -92,16 +90,12 @@ label mv:
     while (renpy.music.get_pos() or 0) < 13.55:
         $ renpy.pause(0.005, hard=True)
 
-    halo "{font=j}{b}One day、雨が降る日も聞こえていたんだ。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.83-shorten-load_shorten]}"
+    halo "{font=j}{b}One day、雨が降る日も聞こえていたんだ。{/b}{/font}\n{font=z}在一个雨天，我听到了，{/font}\n{fast}{nw=[6.83-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 20.38:
         $ renpy.pause(0.005, hard=True)
 
-    halo "{font=j}{b}私を呼ぶ声が。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[3.06-shorten]}"
+    halo "{font=j}{b}私を呼ぶ声が。{/b}{/font}\n{font=z}你呼唤我的声音。{/font}\n{fast}{nw=[3.06-shorten]}"
 
     hide halo
 
@@ -110,41 +104,32 @@ label mv:
     while (renpy.music.get_pos() or 0) < 23.44:
         $ renpy.pause(0.005, hard=True)
 
-    popy "{font=j}{b}どんな時も私のそばに居てくれたね。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.31-shorten-load_shorten]}"
+    popy "{font=j}{b}どんな時も私のそばに居てくれたね。{/b}{/font}\n{font=z}无论什么时候，你都在我的身边。{/font}\n{fast}{nw=[5.31-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 28.75:
         $ renpy.pause(0.005, hard=True)
 
-    popy "{font=j}{b}前を向いてまた歩いていけるように。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.16-shorten]}"
+    popy "{font=j}{b}前を向いてまた歩いていけるように。{/b}{/font}\n{font=z}让我能继续向前，不断走下去。{/font}\n{fast}{nw=[6.16-shorten]}"
 
-    hide popy
+    scene bed
+    with dissolve
 
     show rose at rose_single
 
     while (renpy.music.get_pos() or 0) < 34.91:
         $ renpy.pause(0.005, hard=True)
 
-    rose "{font=j}{b}夢のステージに立てたら、いつか、{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.28-shorten-load_shorten]}"
+    rose "{font=j}{b}夢のステージに立てたら、いつか、{/b}{/font}\n{font=z}倘若有一天，我站在梦想的舞台上，{/font}\n{fast}{nw=[5.28-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 40.19:
         $ renpy.pause(0.005, hard=True)
 
-    rose "{font=j}{b}私は思い浮かべるよ。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.39-shorten]}"
+    rose "{font=j}{b}私は思い浮かべるよ。{/b}{/font}\n{font=z}我一定会想起你，{/font}\n{fast}{nw=[5.39-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 45.58:
         $ renpy.pause(0.005, hard=True)
 
-    rose "{font=j}{b}あなたの顔を、きっと。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.04-shorten]}"
+    rose "{font=j}{b}あなたの顔を、きっと。{/b}{/font}\n{font=z}想起你一直在鼓舞着我。{/font}\n{fast}{nw=[4.04-shorten]}"
 
     scene class
     with dissolve
@@ -162,44 +147,32 @@ label mv:
     while (renpy.music.get_pos() or 0) < 49.62:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が大切な想いと繋がる。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.59-shorten-load_shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が大切な想いと繋がる。{/b}{/font}\n{font=z}这歌与声饱含了我珍贵的回忆。{/font}\n{fast}{nw=[6.59-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 56.21:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}気がつけば支えられていた。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.09-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}気がつけば支えられていた。{/b}{/font}\n{font=z}我后知后觉，它一直支撑着我走过来。{/font}\n{fast}{nw=[4.09-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 60.3:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が、遠くまで届きますように。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.58-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が、遠くまで届きますように。{/b}{/font}\n{font=z}希望这歌与声传递到远方。{/font}\n{fast}{nw=[6.58-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 66.88:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}一つ一つ暖かな気持ち。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.38-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}一つ一つ暖かな気持ち。{/b}{/font}\n{font=z}每一段都是温暖的念想。{/font}\n{fast}{nw=[4.38-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 71.26:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}君の想いが希望になるよ。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.33-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}君の想いが希望になるよ。{/b}{/font}\n{font=z}你的回忆化作我的希望。{/font}\n{fast}{nw=[5.33-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 76.59:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}夢の先へ Only One Yell。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.95-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}夢の先へ Only One Yell。{/b}{/font}\n{font=z}带着最珍贵的支持前往梦想的彼岸。{/font}\n{fast}{nw=[6.95-shorten]}"
 
     scene class
     with dissolve
@@ -209,9 +182,7 @@ label mv:
     while (renpy.music.get_pos() or 0) < 83.54:
         $ renpy.pause(0.005, hard=True)
 
-    narrator "{font=j}{b}{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.22-shorten-load_shorten]}"
+    narrator "{font=j}{b}{/b}{/font}\n{font=z}{/font}\n{fast}{nw=[4.22-shorten-load_shorten]}"
 
     scene autumn
     with dissolve
@@ -223,16 +194,12 @@ label mv:
     while (renpy.music.get_pos() or 0) < 88.26:
         $ renpy.pause(0.005, hard=True)
 
-    pstl "{font=j}{b}Someday、季節が巡って進んでいくたびに、{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.73-shorten-load_shorten]}"
+    pstl "{font=j}{b}Someday、季節が巡って進んでいくたびに、{/b}{/font}\n{font=z}一天天过去，随着季节变换，{/font}\n{fast}{nw=[6.73-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 94.99:
         $ renpy.pause(0.005, hard=True)
 
-    pstl "{font=j}{b}少しずつ変わっていく。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[3.27-shorten]}"
+    pstl "{font=j}{b}少しずつ変わっていく。{/b}{/font}\n{font=z}生活也在变化。{/font}\n{fast}{nw=[3.27-shorten]}"
 
     hide pstl
 
@@ -241,9 +208,7 @@ label mv:
     while (renpy.music.get_pos() or 0) < 98.26:
         $ renpy.pause(0.005, hard=True)
 
-    halo "{font=j}{b}夕暮れの空の下で語り合った未来とは違うけど。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[11.29-shorten-load_shorten]}"
+    halo "{font=j}{b}夕暮れの空の下で語り合った未来とは違うけど。{/b}{/font}\n{font=z}曾经在黄昏的天空下畅想的未来虽没有实现，{/font}\n{fast}{nw=[11.29-shorten-load_shorten]}"
 
     hide halo
 
@@ -252,23 +217,17 @@ label mv:
     while (renpy.music.get_pos() or 0) < 109.55:
         $ renpy.pause(0.005, hard=True)
 
-    popy "{font=j}{b}確かなものはそう胸の中に。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.36-shorten-load_shorten]}"
+    popy "{font=j}{b}確かなものはそう胸の中に。{/b}{/font}\n{font=z}但心中已经有了坚信的事情。{/font}\n{fast}{nw=[5.36-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 114.91:
         $ renpy.pause(0.005, hard=True)
 
-    popy "{font=j}{b}優しい温もりを真っ直ぐに、{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.35-shorten]}"
+    popy "{font=j}{b}優しい温もりを真っ直ぐに、{/b}{/font}\n{font=z}我要把这暖心的感受，{/font}\n{fast}{nw=[5.35-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 120.26:
         $ renpy.pause(0.005, hard=True)
 
-    popy "{font=j}{b}あなたへ伝えるよ。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.0-shorten]}"
+    popy "{font=j}{b}あなたへ伝えるよ。{/b}{/font}\n{font=z}直白地告诉你。{/font}\n{fast}{nw=[4.0-shorten]}"
 
     scene ground
     with dissolve
@@ -284,44 +243,32 @@ label mv:
     while (renpy.music.get_pos() or 0) < 124.26:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}いくつもの思い出が大切な宝物になる。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.62-shorten-load_shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}いくつもの思い出が大切な宝物になる。{/b}{/font}\n{font=z}许多回忆都化作珍贵的宝物。{/font}\n{fast}{nw=[6.62-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 130.88:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}手を取って積み重ねた日々。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.1-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}手を取って積み重ねた日々。{/b}{/font}\n{font=z}那是我们手拉手一起度过的时光。{/font}\n{fast}{nw=[4.1-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 134.98:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}どこまでもどこまでも遠くへと羽ばたけるから。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.56-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}どこまでもどこまでも遠くへと羽ばたけるから。{/b}{/font}\n{font=z}无论要去哪里，都能展翅高飞。{/font}\n{fast}{nw=[6.56-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 141.54:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}かけがえない光を信じて。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.41-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}かけがえない光を信じて。{/b}{/font}\n{font=z}相信那无可替代的光。{/font}\n{fast}{nw=[4.41-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 145.95:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}君と描いた明日へと続く。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.3-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}君と描いた明日へと続く。{/b}{/font}\n{font=z}飞到那和你一起描绘的明天。{/font}\n{fast}{nw=[5.3-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 151.25:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}夢の先へ Only One Yell。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.35-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}夢の先へ Only One Yell。{/b}{/font}\n{font=z}你的支持，实现着我的梦想。{/font}\n{fast}{nw=[6.35-shorten]}"
 
     scene night
     with dissolve
@@ -331,16 +278,12 @@ label mv:
     while (renpy.music.get_pos() or 0) < 157.6:
         $ renpy.pause(0.005, hard=True)
 
-    rose "{font=j}{b}夜空に輝いた幾千の星よりも、{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.25-shorten-load_shorten]}"
+    rose "{font=j}{b}夜空に輝いた幾千の星よりも、{/b}{/font}\n{font=z}比起这满天的繁星，{/font}\n{fast}{nw=[5.25-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 162.85:
         $ renpy.pause(0.005, hard=True)
 
-    rose "{font=j}{b}みんなの輝きがずっと。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.37-shorten]}"
+    rose "{font=j}{b}みんなの輝きがずっと。{/b}{/font}\n{font=z}大家的光辉更为璀璨。{/font}\n{fast}{nw=[5.37-shorten]}"
 
     hide rose
 
@@ -349,16 +292,12 @@ label mv:
     while (renpy.music.get_pos() or 0) < 168.22:
         $ renpy.pause(0.005, hard=True)
 
-    pstl "{font=j}{b}私には何よりもそれが愛おしかった。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.99-shorten-load_shorten]}"
+    pstl "{font=j}{b}私には何よりもそれが愛おしかった。{/b}{/font}\n{font=z}对我而言，这比什么都宝贵。{/font}\n{fast}{nw=[5.99-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 174.21:
         $ renpy.pause(0.005, hard=True)
 
-    pstl "{font=j}{b}心から「ありがとう」。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.01-shorten]}"
+    pstl "{font=j}{b}心から「ありがとう」。{/b}{/font}\n{font=z}真心地说一声谢谢你。{/font}\n{fast}{nw=[6.01-shorten]}"
 
     scene cloud
     with dissolve
@@ -372,16 +311,12 @@ label mv:
     while (renpy.music.get_pos() or 0) < 180.22:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose "{font=j}{b}まっさらな感情は透明なメロディーに乗って、{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.66-shorten-load_shorten]}"
+    popy_rose "{font=j}{b}まっさらな感情は透明なメロディーに乗って、{/b}{/font}\n{font=z}新的感受，伴随着透明的旋律，{/font}\n{fast}{nw=[6.66-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 186.88:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose "{font=j}{b}響いてく、あの雲を越えて。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.05-shorten]}"
+    popy_rose "{font=j}{b}響いてく、あの雲を越えて。{/b}{/font}\n{font=z}唱响，飞越那片云。{/font}\n{fast}{nw=[4.05-shorten]}"
 
     hide popy
 
@@ -394,16 +329,12 @@ label mv:
     while (renpy.music.get_pos() or 0) < 190.93:
         $ renpy.pause(0.005, hard=True)
 
-    halo_pstl "{font=j}{b}特別な今日というこの時に、{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[3.97-shorten-load_shorten]}"
+    halo_pstl "{font=j}{b}特別な今日というこの時に、{/b}{/font}\n{font=z}为了今天这个特别的日子，{/font}\n{fast}{nw=[3.97-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 194.9:
         $ renpy.pause(0.005, hard=True)
 
-    halo_pstl "{font=j}{b}見せられるように溢れ出す笑顔。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.68-shorten]}"
+    halo_pstl "{font=j}{b}見せられるように溢れ出す笑顔。{/b}{/font}\n{font=z}展现出满溢的欢笑。{/font}\n{fast}{nw=[6.68-shorten]}"
 
     scene dawn
     with dissolve
@@ -423,44 +354,32 @@ label mv:
     while (renpy.music.get_pos() or 0) < 201.58:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が大切な想いと繋がる。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.69-shorten-load_shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が大切な想いと繋がる。{/b}{/font}\n{font=z}这歌声就是我最珍贵的回忆。{/font}\n{fast}{nw=[6.69-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 208.27:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}気がつけば支えられていた。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.03-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}気がつけば支えられていた。{/b}{/font}\n{font=z}我知道是这歌声在支持着我。{/font}\n{fast}{nw=[4.03-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 212.3:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が、遠くまで届きますように。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.61-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}この歌がこの声が、遠くまで届きますように。{/b}{/font}\n{font=z}惟愿这歌声能唱到远方。{/font}\n{fast}{nw=[6.61-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 218.91:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}一つ一つ暖かな気持ち。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[4.35-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}一つ一つ暖かな気持ち。{/b}{/font}\n{font=z}歌声里饱含着温馨的思念。{/font}\n{fast}{nw=[4.35-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 223.26:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}君の想いが希望になるよ。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[5.27-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}君の想いが希望になるよ。{/b}{/font}\n{font=z}你的回忆化作我的希望。{/font}\n{fast}{nw=[5.27-shorten]}"
 
     while (renpy.music.get_pos() or 0) < 228.53:
         $ renpy.pause(0.005, hard=True)
 
-    popy_rose_halo_pstl "{font=j}{b}夢の先へ Only One Yell。{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[6.35-shorten]}"
+    popy_rose_halo_pstl "{font=j}{b}夢の先へ Only One Yell。{/b}{/font}\n{font=z}带着这份思念，向着梦想前行。{/font}\n{fast}{nw=[6.35-shorten]}"
 
     scene dawn
     with dissolve
@@ -470,17 +389,13 @@ label mv:
     while (renpy.music.get_pos() or 0) < 251.58:
         $ renpy.pause(0.005, hard=True)
 
-    narrator "{font=j}{b}{/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=[3.0-shorten-load_shorten]}"
+    narrator "{font=j}{b}{/b}{/font}\n{font=z}{/font}\n{fast}{nw=[3.0-shorten-load_shorten]}"
 
     while (renpy.music.get_pos() or 0) < 261.58000000000004:
         $ renpy.pause(0.005, hard=True)
 
     # show idle
 
-    idle "{font=j}{b}==idle=={/b}{/font}\n
-    {font=z}{/font}\n
-    {fast}{nw=10.000}"
+    idle "{font=j}{b}==idle=={/b}{/font}\n{font=z}{/font}\n{fast}{nw=10.000}"
 
     return
